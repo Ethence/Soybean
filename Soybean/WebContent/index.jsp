@@ -44,7 +44,15 @@
 <table id="spendingTable"></table>
 <hr/>
 <button id="addBtn">Add</button>
+<button id="editBtn">Edit</button>
 </body>
 <script src="lib/soybean/FamilySpendingTable.js"></script>
 <script src="lib/soybean/FamilySpendingItemAddDialog.js"></script>
+<script src="lib/soybean/FamilySpendingItemEditDialog.js"></script>
+<script>
+$("#editBtn").button().click(function() {
+    var gridSelector = "#spendingTable";
+    editFamilySpendingItem(gridSelector);
+});
+</script>
 </html>
